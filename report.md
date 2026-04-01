@@ -1,17 +1,18 @@
-# Report
+## Issue Encountered
 
-## Use Case
-I chose generating follow-up emails after meetings.
+During development, I initially used the model "gemini-pro", but it resulted in an error.
 
-## Model
-I used GPT-4o-mini because it is fast and easy to use.
+The error message indicated that the model was not available for the API version.
 
-## Comparison
-The initial version was too general.
-After revising the prompt, the output became clearer and more structured.
 
-## Limitations
-Sometimes the model adds details that were not in the notes.
+![alt text](<截屏2026-04-01 17.16.45.png>)
 
-## Recommendation
-This workflow is useful but should include human review.
+## Fix
+
+I changed the model to "gemini-1.5-flash", which is supported.
+
+After this change, the system worked correctly and was able to generate outputs.
+
+## Reflection
+
+This showed that model selection matters, and not all models are available in the same API version.
